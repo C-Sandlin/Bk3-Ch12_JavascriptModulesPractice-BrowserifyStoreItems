@@ -1,36 +1,21 @@
-# Browserify Boilerplate Repository
-
-Use this repository for when you want to start a new modular JavaScript application that gets compiled by Browserify. You start off with three JavaScript modules in the `src/scripts` directory.
-
-1. `hello.js` - Exports a simple function that says hello
-1. `goodbye.js` - Exports a simple function that says goodbye
-1. `sandwichMaker.js` - Exports an object with a single method named `placeOrder()`
-1. `main.js` - Contains the logic of your application. It imports the other three modules, and invokes all of the functions.
-
-## Prerequisites for Everyone
-
-Run this first
-
-```sh
-npm i -g cross-env
-```
-
-## Project Setup
-
-1. Clone this repository.
-1. `cd browserify-boilerplate/src/lib`
-1. `npm install`
-1. `npm start`
-
-The `npm start` command will run grunt for you.
-
-The web server will be started, and the JavaScript code in the `src/scripts` directory will be compiled into `public/bundle.js`.
-
-1. Open Chome and make sure your developer tools are open.
-1. Open [http://localhost:8080](http://localhost:8080) in your browser.
-1. You should see the following output in the console.
-
-![sample boilerplate output](./browserify-boilerplate-output.png)
-# Browserify-Template-CS
-# Browserify-Template_CS
 # Bk3-Ch12-JavascriptModulesPractice-BrowserifyStoreItems
+
+## Practice: Product Ordering
+
+Your task is to simulate a product listing page like you would find on Etsy, Amazon, or Ebay. This application should implement the following features.
+
+1. Display an individual product component. Each product should have a title, short description, price, quantity, and an image.
+1. Display the application information in a navigation bar at the top of the page.
+    1. The name of the company - Betsy
+    1. Three links: *Categories*, *Orders*, and *Log Out* (_these links won't actually do anything, you're just practicing making the navigation bar a component)
+1. Display a review list component that contains a maximum of 3 product review components beneath a product. You can use [hipster ipsum](https://hipsum.co/) for the reviews themselves.
+
+### Component/Module Map
+
+![dependency map](./images/product-exercise-dependecies.png)
+
+## Technical Requirements
+
+1. While you are developing, make sure Grunt is verifying your JavaScript syntax every time you save a file.
+1. Grunt should be compiling your modules each time you save a JavaScript file.
+1. Grunt should be minifying your code each time you save a JavaScript file.
