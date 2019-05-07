@@ -57,3 +57,11 @@
   flex-wrap: nowrap;
   padding: 10px;
 }
+
+#reviews-container {
+  padding: 20px;
+}
+
+.single-item-focus {
+  width: 1000px;
+}
